@@ -1,0 +1,77 @@
+@import 'colorPalette.css';
+
+.side-menu-container {
+  display: flex;
+  position: absolute;
+  left: 15%;
+  top: 4vh;
+  width: 80%;
+  max-height: 90%;
+  overflow: hidden;
+}
+.side-menu {
+  display: flex;
+  background-color: rgb(0, 179, 255);
+  max-width: fit-content;
+}
+.buttons-menu {
+  display: block;
+}
+.side-menu-button {
+  margin: 1.5vh;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 50px;
+}
+.side-menu-button--normal {
+  padding: 6vh 2vh 6vh 2vh;
+  width: 27rem;
+}
+.side-menu-button--color {
+  background-color: var(--menu-btn-color);
+  color: var(--menu-btn-text-color);
+}
+
+.clickable:hover {
+  background-color: var(--menu-btn-color__hover);
+  color: var(--menu-btn-text-color__hover);
+}
+
+.money-left {
+  display: grid;
+}
+.inserted-value {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  min-width: 400px;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.side-text {
+  position: relative;
+  display: grid;
+  left: 2rem;
+}
+.side-text-title {
+  margin-top: 1vh;
+}
+.side-text-button {
+  padding: 1vh;
+}
+.autopass-icon {
+  position: fixed;
+  bottom: 20vh;
+}
+
+.desc-text {
+  font-size: 30px;
+  color: var(--desc-text-color);
+}

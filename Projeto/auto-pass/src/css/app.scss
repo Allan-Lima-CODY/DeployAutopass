@@ -1,0 +1,122 @@
+// app global css in SCSS form
+@import 'colorPalette.css';
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap%27');
+/*Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  min-height: 100vh;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/*Style*/
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 83px;
+}
+header {
+  border-style: solid;
+  background-color: var(--header-bg-color);
+  border-color: var(--header-border-color);
+  border-width: 0;
+  border-bottom-width: 10px;
+  font-size: 64px;
+  padding-left: 30px;
+}
+footer {
+  background-color: var(--footer-bg-color);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 20vh;
+  display: flex !important;
+  justify-content: space-between;
+  padding: 2rem;
+  z-index: -1;
+}
+p {
+  margin: 0 0 8px;
+}
+.footer-icon {
+  margin: 0.5rem;
+}
+.menu {
+  background-color: var(--menu-bg-color);
+}
+.menu-btn {
+  background-color: var(--menu-btn-color);
+  color: var(--menu-btn-text-color);
+  transition: 0.5s;
+  font-size: 50px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem;
+}
+.menu-btn__clickable:hover {
+  background-color: var(--menu-btn-color__hover);
+  color: var(--menu-btn-text-color__hover);
+}
+
+/*Tables*/
+
+.table-border {
+  border-bottom: solid;
+}
+.table-cell-right-border {
+  border-right: solid;
+}
+
+.table-row div {
+  padding: 10px;
+  flex: 1;
+  line-height: 1.1em;
+}
+.table-cell {
+  padding: 10px;
+  flex: 1;
+}
+.table-cell__border {
+  border-style: hidden solid hidden hidden;
+}
+
+/*Utils*/
+.pos-fixed {
+  position: fixed;
+}
+.items-center {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.round-border {
+  border-radius: 50px;
+}
+.without-border {
+  border-width: 0;
+}
+.desc-text-size {
+  font-size: 30px;
+}
+.sub-desc-text-size {
+  font-size: 24px;
+}
